@@ -36,8 +36,8 @@ body{
 }
 
 .main-container{
-    margin: 120px 0 0 0;
-    padding: 0 30px;
+    margin: 130px 0 0 0;
+    padding: 0 35px;
 }
 
 .main-container__logo{
@@ -52,7 +52,7 @@ body{
 }
 
 .main-container__title-main{
-    font-size: 1.8rem;
+    font-size: 1.8rem; /*32.4px*/
     color: var(--dark-grayish-blue);
     font-weight: 600;
     text-align: center;
@@ -62,25 +62,26 @@ body{
 
 .main-container__description-header{
     color: var(--grayish-blue);
-    font-size: 16.4px;
+    font-size: 14.2px; /*minmax(14.2px, 0.8rem);*/
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.8;
     margin-bottom: 50px;
+    letter-spacing: 1px;
 }
 
 /**buttons download header e footer**/
 .main-container__buttons-download{
     display: flex;
     flex-flow: column nowrap;
-    gap: 20px;
+    gap: 25px;
 }
 
 .main-container__button-download{
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 15px 0;
     border-radius: 45px;
     color: var(--white-variation-01);
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 1px;
 }
 
@@ -89,7 +90,7 @@ body{
     border-top: 1px solid var(--strong-variation-01);
     border-right: 1px solid var(--strong-variation-01);
     border-left: 1px solid var(--strong-variation-01);
-    border-bottom: 3px inset var(--strong-variation-01);
+    border-bottom: 4px inset var(--strong-variation-01);
     box-shadow: 0 8px 15px 2px var(--strong-cyan-shadow);
 }
 
@@ -98,18 +99,18 @@ body{
     border-top: 1px solid var(--ligh-blue-variation-01);
     border-right: 1px solid var(--ligh-blue-variation-01);
     border-left: 1px solid var(--ligh-blue-variation-01);
-    border-bottom: 3px inset var(--ligh-blue-variation-01);
-    box-shadow: 0 7px 12px 2px var(--shadow-color);
+    border-bottom: 4px inset var(--ligh-blue-variation-01);
+    box-shadow: 0 7px 15px 2px var(--shadow-color);
 }
 
 /**section snipptes**/
 
 .main-container__header{
-    margin-bottom: 150px;
+    margin-bottom: 160px;
 }
 
 .main-container__subtitle{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: var(--dark-grayish-blue);
     font-weight: 600;
     text-align: center;
@@ -121,16 +122,96 @@ body{
     color: var(--grayish-blue);
     font-size: 16.4px;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.6;
     margin-bottom: 0;
     font-weight: 400;
 }
 
-.main-container__image-from-side img, .main-container__content-access img{
+.main-container__image-from-side img{
     display: block;
     max-width: 100%;
+    object-fit: contain;
 }
 
 .main-container__header-section{
-    margin-bottom: 70px;
+    margin-bottom: 60px;
+}
+
+.main-container__image-from-side{
+    margin-bottom: 60px;
+}
+
+.main-container__name-benefit, .main-container__name-tool{
+    font-size: 1.3rem;
+    color: var(--dark-grayish-blue);
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.main-container__description-benefit, .main-container__description-tool{
+    color: var(--grayish-blue);
+    font-size: 16.2px;
+    text-align: center;
+    line-height: 1.7;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.main-container__container-benefits:nth-child(1), .main-container__container-benefits:nth-child(2){
+    margin-bottom: 50px;
+}
+
+.main-container__section-snippets{
+    margin-bottom: 190px;
+}
+
+/**section acess**/
+
+.main-container__section-access{
+    margin-bottom: 105px;
+}
+
+.main-container__access img{
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/**section workflow**/
+
+.main-container__icon-tool img{
+    display: block;
+    margin: 0 auto;
+}
+
+.main-container__icon-tool{
+    margin-bottom: 40px;
+}
+
+.main-container__tool{
+    margin-bottom: 60px;
+}
+
+/**section companies**/
+
+.main-container__companies{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 70px;
+}
+
+.main-container__companies-logo{
+    display: flex;
+    justify-content: center;
+}
+
+.main-container__companies-logo img{
+    display: block;
+}
+
+.main-container__section-workflow{
+    margin-bottom: 120px;
 }
