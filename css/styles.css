@@ -18,9 +18,10 @@ h1,h2,h3,h4,h5,h6{
     --grayish-blue: hsl(201, 11%, 66%);
     --strong-variation-01: hsla(171, 46%, 44%, 1);
     --ligh-blue-variation-01: hsla(233, 100%, 62%, 1);
-    --white-variation-01: hsla(0, 50%, 100%);
+    --white-variation-01: hsla(0, 100%, 100%, 0.4);
     --shadow-color: rgba(0, 0, 0.2, 0.1);
     --strong-cyan-shadow: hsla(171, 100%, 54%, 0.2);
+    --bg-footer: #f7f7f7;
 }
 
 html{
@@ -36,8 +37,8 @@ body{
 }
 
 .main-container{
-    margin: 130px 0 0 0;
-    padding: 0 35px;
+    margin: 120px 0 170px 0;
+    padding: 0 30px;
 }
 
 .main-container__logo{
@@ -62,11 +63,10 @@ body{
 
 .main-container__description-header{
     color: var(--grayish-blue);
-    font-size: 14.2px; /*minmax(14.2px, 0.8rem);*/
+    font-size: 16.3px; /*minmax(14.2px, 0.8rem);*/
     text-align: center;
     line-height: 1.8;
-    margin-bottom: 50px;
-    letter-spacing: 1px;
+    margin-bottom: 45px;
 }
 
 /**buttons download header e footer**/
@@ -78,11 +78,10 @@ body{
 
 .main-container__button-download{
     font-size: 1rem;
-    padding: 15px 0;
+    padding: 14px 0;
     border-radius: 45px;
-    color: var(--white-variation-01);
-    font-weight: 400;
-    letter-spacing: 1px;
+    color: white;
+    font-weight: 600;
 }
 
 .main-container--bg-color-cyan{
@@ -134,7 +133,7 @@ body{
 }
 
 .main-container__header-section{
-    margin-bottom: 60px;
+    margin-bottom: 75px;
 }
 
 .main-container__image-from-side{
@@ -170,7 +169,12 @@ body{
 /**section acess**/
 
 .main-container__section-access{
-    margin-bottom: 105px;
+    margin-bottom: 110px;
+}
+
+.main-container__access{
+    display: flex;
+    padding: 0;
 }
 
 .main-container__access img{
@@ -191,7 +195,7 @@ body{
 }
 
 .main-container__tool{
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 /**section companies**/
@@ -200,7 +204,9 @@ body{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    gap: 70px;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 165px;
 }
 
 .main-container__companies-logo{
@@ -210,8 +216,79 @@ body{
 
 .main-container__companies-logo img{
     display: block;
+    max-width: 100%;
+    width: 85%;
 }
 
 .main-container__section-workflow{
     margin-bottom: 120px;
+}
+
+/**section downloads**/
+.main-container--mg-bottom{
+    margin-bottom: 45px;
+}
+
+/**footer**/
+.main-container__footer{
+    background-color: var(--bg-footer);
+    padding: 73px 0;
+}
+
+.main-container__img-logo-footer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.main-container__img-logo-footer img{
+    display: block;
+    width: 55px;
+    height: 55px;
+}
+
+.main-container__nav-footer{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.main-container__nav-footer a{
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+}
+
+.main-container__social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.main-container__social-media a{
+    text-decoration: none;
+}
+
+/**breakpoint 380px**/
+@media screen and (min-width: 380px) {
+    body{
+        background-image: url(../images/bg-header-desktop.png);
+        background-repeat: no-repeat;
+    }
+
+    .main-container__buttons-download{
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .main-container__button-download{
+        padding: 14px 0;
+        width: 220px;
+    }
 }
