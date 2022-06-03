@@ -102,6 +102,11 @@ body{
     box-shadow: 0 7px 15px 2px var(--shadow-color);
 }
 
+.main-container__button-download:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 /**section snipptes**/
 
 .main-container__header{
@@ -277,6 +282,21 @@ body{
     text-decoration: none;
 }
 
+.main-container__social-media a i{
+    color: var(--dark-grayish-blue);
+    font-size: 25px;
+}
+
+.main-container__nav-footer a:hover{
+    color: var(--strong-cyan);
+    cursor: pointer;
+}
+
+.main-container__social-media a:hover i{
+    color: var(--strong-cyan);
+    cursor: pointer;
+}
+
 /**breakpoint 380px**/
 @media screen and (min-width: 380px) {
     body{
@@ -297,8 +317,8 @@ body{
     }
 }
 
-/**breakpoint 600px**/
-@media screen and (min-width: 630px) {
+/**breakpoint 700px**/
+@media screen and (min-width: 700px) {
     .main-container__buttons-download{
         flex-flow: row nowrap;
         justify-content: center;
@@ -307,7 +327,7 @@ body{
     }
 
     .main-container__header{
-        width: 625px;
+        width: 690px; /*625px*/
         margin: 160px auto;
     }
 
@@ -316,17 +336,21 @@ body{
     }
 
     .main-container__header-section{
-        width: 625px;
+        width: 690px;
         margin: 75px auto;
     }
 
     .main-container{ padding: 0 0; }
 
-    .main-container__title-main{ font-size: 2.2rem; }
+    .main-container__title-main{ font-size: 2.4rem; } /*43.2px*/
 
-    .main-container__description-header{ font-size: 1rem; }
+    .main-container__description-header{ font-size: 1.1rem; /*19.8px*/ }
 
-    .main-container__subtitle{ font-size: 1.8rem; }
+    .main-container__subtitle{ font-size: 1.9rem; }
+
+    .main-container__description-section{
+        font-size: 18px; /*16.4px*/
+    }
 
     .main-container__container-benefits{   width: 350px; }
 
@@ -376,13 +400,18 @@ body{
     .main-container__nav-footer{
        margin-bottom: 0;
     }
+
+    .main-container__logo img{
+        width: auto;
+    }
 }
 
+/**breakpoint 1000px**/
 @media screen and (min-width: 1000px) {
     .main-container__benefits{
         display: flex;
         flex-flow: row nowrap;
-        gap: 110px;
+        gap: 90px;
     }
 
     .main-container__description-benefit,
@@ -396,11 +425,14 @@ body{
 
     .main-container__image-from-side{
         margin-bottom: 0;
+        position: relative;
+        right: 30px;
     }
 
     .main-container__workflow{
         flex-flow: row nowrap;
         gap: 30px;
+        align-items: flex-start;
     }
 
     .main-container__companies-logo img{ width: auto; }
